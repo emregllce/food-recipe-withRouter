@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(0, 173, 181);
+}
+
+.title{
+    font-family: Girassol;
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 1.5rem;
+}
+
+.formStyle{
+    display: flex;
+    justify-content: center;
+}
+.formDiv{
+    margin: auto;
+    margin-top: 1rem;
+    width: fit-content;
+    border: 3px solid white;
+    padding: 5px 10px;
+}
+.formInput{
+    width: 200px;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    padding-left: 10px;
+    margin-right: 5px;
+    border-radius: 10px;
+    
+}
+
+.formSubmit{
+    width: 100px;
+    height: 50px;
+    background-color: rgb(225, 241, 221);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 27px;
+    margin-right: 5px;
+    border-radius: 10px;
+    cursor: pointer;  
+}
+.formSubmit:hover{
+    transform: scale(1.02);
+}
+.formSelect{
+    width: 250px;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    border-radius: 5px;
+}
+
+.iconDiv{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.icon{
+    width: 500px;
+    height: auto;
+    margin-top: 2rem;
+}
+
+.recipes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+.recipe{
+    width: 300px;
+    height: 450px;
+    margin: 20px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(225, 241, 221);
+    border-radius: 10px;
+}
+.viewMore{
+    padding: 5px;
+    cursor: pointer;
+    background-color: rgb(225, 241, 221);
+    margin-top: 10px;
+    font-size: 1.3rem;
+
+}
+.viewMore:hover{
+    transform: scale(1.1);
+}
+.recipeTitle{
+    margin: 5px 0 10px;
+}
+.recipeImage{
+    margin: 10px;
+    width: auto;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.dietIcon{
+    width: 200px;
+    height: auto;
+}
+
+.header{
+    width: 50%;
+    height: fit-content;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ingredients{
+    display: flex;
+    flex-direction: column;
+}
+
+.details{
+    width: fit-content;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    border: 2px solid white;
+    padding: 20px;
+    background-color: rgb(225, 241, 221);
+}
+
+.image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 40px;
+}
+
+.backArrow{
+    width: 48px;
+    cursor: pointer;
+    background-color: rgb(225, 241, 221);
+}

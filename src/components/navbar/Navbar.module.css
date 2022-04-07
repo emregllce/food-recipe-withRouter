@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    height: 10vh;
+    
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border-bottom: 1px solid grey;
+    background-color: rgb(225, 241, 221);
+    font-family: Girassol;
+    font-size: 2rem;
+    
+}
+
+a{
+    text-decoration: none;
+}
+ .navbarLeft{
+    margin-left: 1rem;
+    color: rgb(225, 241, 221);
+}
+
+.navbarRight{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.clrs{
+    font-size: 2.8rem;
+    color: black;
+}
+.clrs2{
+    color: rgb(0, 173, 181);
+}
