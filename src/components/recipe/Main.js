@@ -5,13 +5,18 @@ import axios from "axios";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import home from "../../assets/home.svg";
 
+const API_KEY = process.env.REACT_APP_EDAMAM_KEY;
+//const API_KEY = "f814cbdf7cd35d6688d9f5d4e842aaca";
+ const APP_ID = process.env.REACT_APP_EDAMAM_ID
+//const APP_ID = "59dc9e12";
+
 const Main = () => {
   const [recipes, setRecipes] = useState();
   const [search, setSearch] = useState("");
   const [mealType, setMealType] = useState("");
   const navigate = useNavigate();
   const params = useParams();
-
+  
   const handleSearch = (e) => setSearch(e.target.value);
   const handleMealType = (e) => setMealType(e.target.value);
   const handleSubmit = (e) => {
@@ -19,12 +24,11 @@ const Main = () => {
     fetchApi();
     setSearch("");
   };
-
-  const fetchApi = async () => {
-    const API_KEY = "f814cbdf7cd35d6688d9f5d4e842aaca";
-    const APP_ID = "59dc9e12";
-    const myUrl = ` https://api.edamam.com/api/recipes/v2?type=public&q=${search}&app_id=${APP_ID}&app_key=${API_KEY}`;
-    await axios.get(myUrl).then((res) => setRecipes(res.data.hits)); //console.log
+  
+  const myUrl = ` https://api.edamam.com/api/recipes/v2?type=public&q=${search}&app_id=${APP_ID}&app_key=${API_KEY}`;
+  const fetchApi =  () => {
+    
+     axios.get(myUrl).then((res) => setRecipes(res.data.hits)); //console.log
   };
   // https://api.edamam.com/search?q=${search}&app_id=${APP_ID}&app_key=${API_KEY}
 
