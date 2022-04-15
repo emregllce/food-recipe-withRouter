@@ -10,6 +10,8 @@ import RecipeCard from './components/recipe/RecipeCard';
 import Github from './components/github/Github';
 import Register from './components/login/Register';
 import AuthContextProvider from './context/AuthContext';
+import { ToastContainer } from "react-toastify";
+
 
 function App() {
   return (
@@ -28,6 +30,7 @@ function App() {
           <Route path="*" element={<NotFound />}></Route>
         </Routes>
         </BrowserRouter>
+        <ToastContainer />
         </AuthContextProvider>
         {/* <RecipeCard /> */}
     </div>

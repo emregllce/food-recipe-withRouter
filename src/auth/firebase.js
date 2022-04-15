@@ -65,6 +65,7 @@ export const createUser = async (email, password, displayName, navigate) => {
 
   export const logOut = async(navigate) => {
     await signOut(auth);
+  toastSuccessNotify("Logged out successfully!");
     navigate("/")
 
     Alert("Logged out successfully!");
